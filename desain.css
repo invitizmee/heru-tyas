@@ -1,0 +1,178 @@
+@font-face {
+    font-family: 'latinjudul';
+    src: url(simplethread.otf);
+}
+
+@font-face {
+    font-family: 'standart';
+    src: url(AvenirLTProBook.otf);
+    color: rgb(104, 35, 35)
+}
+
+.modalbody {
+    background: rgba(0, 0, 0, 0.575) url('./image/heru/bg1.jpg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.cover {
+    background: rgba(0, 0, 0, 0.4) url('./image/heru/2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    height: 100vh;
+    /* set tinggi container sama dengan tinggi viewport (viewport height) */
+    width: 100%;
+    /* set lebar container sama dengan lebar layar */
+}
+
+.tombol {
+    color: #ddbf65;
+}
+
+.bg2 {
+        background: rgba(0, 0, 0, 0.295) url('./image/heru/BG.jpg');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: multiply;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+}
+.cover2 {
+    background: rgba(0, 0, 0, 0.664) url('./image/heru/3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+.bungkus {
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+    border: 2px white;
+    border-radius: 10px;
+}
+
+/* countdown */
+.countdown1 {
+    background-image: url('./image/heru/goldbg.jpg');
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.box-container {
+    display: flex;
+}
+
+.box {
+    margin: 0 10px;
+    width: 100%;
+    height: 100px;
+    background-color: #222;
+    color: rgb(15, 15, 15);
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.days {
+    background-color: #ffffff;
+}
+
+.hours {
+    background-color: #ffffff;
+}
+
+.minutes {
+    background-color: #ffffff;
+}
+
+.seconds {
+    background-color: #ffffff;
+}
+
+.time {
+    font-size: 3rem;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.label {
+    margin-top: 0px;
+    font-size: 1.2rem;
+}
+
+/* GALERI */
+
+.galeri {
+    background:rgb(34, 34, 34);
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* bank */
+.barcode {
+    width: 50%;
+    height: auto;
+    max-width: 100%;
+}
+
+.komen {
+    background: url('./image/28.jpg');
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.display_comment {
+    max-height: 400px;
+    /* atur ketinggian maksimum elemen */
+    overflow-y: auto;
+    /* atur overflow-y ke auto untuk menambahkan scrollbar jika konten melebihi ketinggian maksimum */
+}
+.hal9 {
+    background-color: rgb(255, 255, 255);
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.msc {
+    width: 80px;
+      position:fixed; /*trik posisi fix*/
+      z-index:3; /*supaya header selalu muncul di atas seluruh elemen*/
+      margin-top: 300px;
+      float: right;
+  }
+  
+  .msc button {
+    color: rgb(68, 68, 68);
+  }

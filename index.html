@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- CSS DESAIN -->
+    <link rel="stylesheet" href="./desain.css">
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="./lightbox2/dist/css/lightbox.min.css" />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- music -->
+    <div class="container msc" style="margin-top:600px; float: left; position:fixed; z-index:3;">
+        <button class="btn btn-light" style="color: black;" class="display-none" onclick="toggleMusic()"
+            id="btn-playback" data-play="false">
+            <i class="fa fa-play"></i>
+        </button>
+        <audio id="audio">
+            <source id="audio" src="./rer.mp3" type="audio/mp3">
+        </audio>
+    </div>
+    <!-- MODAL -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modalbody modal-fullscreen-xxl-down">
+            <div class="modal-content modalbody">
+                <div class="text-center" style="padding-top: 30px; margin-bottom: 320px;">
+                    <img src="" style="height: 80px; width: auto; max-width: 100%; padding-bottom: 15px;">
+                    <h5 style="font-family: standart; color: rgb(255, 255, 255);"> The Wedding Of
+                    </h5>
+                    <h1 style="font-family: latinjudul; color: rgb(255, 255, 255); font-size: 40px;">Tyas & Heru
+                    </h1>
+                    <img src="./image/heru/hr.svg" alt="" srcset="">
+                </div>
+                <div class="text-center"
+                    style="width: 200px; max-width: 100%; height: auto; background-color: white; border-radius: 25px; margin-left: auto; margin-right: auto; padding: 15px; ">
+                    <h6 style="font-family: latin; color: rgb(0, 0, 0);"> Kepada Yth: Bapak/Ibu/Saudara/i</h6>
+                    <h5 style="font-family: standart; color: rgb(0, 0, 0); font-size: 25px;" class="mt-2 mb-2"
+                        id="greeting">
+                        <script src="script.js"></script>">
+                    </h5>
+                    <h6 style="font-family: latin; font-size: x-small; color: rgb(0, 0, 0);"> Mohon maaf apabila ada
+                        kesalahan dalam penulisan nama dan gelar.</h6>
+                </div>
+                <div class="text-center mt-2">
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal" onclick="toggleMusic()">
+                        <img src="./image/amplop.svg" width="30px" height="auto"> Buka Undangan</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!-- COVER -->
+    <div class="container-fluid cover">
+        <div class="container text-center">
+            <div style="padding-top: 500px;">
+                <h5 data-aos="fade-up" style="font-family: standart; color: white;"> The Wedding Of</h5>
+                <h1 data-aos="fade-up" style="font-family: latinjudul; color: white; font-size: 40px;">Tyas & Heru
+                </h1>
+                <h4 data-aos="fade-up" style="font-family: standart; color: white;"> Jum'at, 25 Agustus 2023</h4>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- I -->
+    <div class="container-fluid text-center mb-5">
+        <div class="container mt-3">
+            <img data-aos="fade-up" src="./image/PngItem_120610 bw.png"
+                style="height: 100px; width: auto; max-width: 100%; padding-bottom: 15px; margin-top: 50px;">
+            <p data-aos="fade-up" style="font-family: standart; color: rgb(59, 59, 59);" class="pt-3"> " Dan di antara
+                tanda-tanda kekuasaan-Nya
+                diciptakan-Nya
+                untukmu pasangan hidup dari jenismu sendiri supaya kamu dapat ketenangan hati dan dijadikannya kasih
+                sayang di antara kamu. Sesungguhnya yang demikian menjadi tanda-tanda kebesaran-Nya bagi orang-orang
+                yang berpikir. "
+                <br>
+                <br>
+                - Q.S. Ar-Rum: 21 -</p>
+        </div>
+    </div>
+
+    <!-- II -->
+    <div class="container-fluid bg2">
+        <div class="container text-center " style=" padding-top: 50px; padding-bottom: 30px;">
+            <span data-aos="fade-up" style="font-family: latinjudul; font-size: 35px; color: rgb(255, 255, 255)">Kedua Mempelai</span>
+            <img src="./image/heru/hr.svg" alt="">
+            <div class="row pt-5">
+                <div class="col-12">
+                    <img data-aos="zoom-in" src="./image/heru/tyas.png" style="width: 300px; height: auto; max-width: 100%;">
+                    <br>
+                    <br>
+                    <span data-aos="fade-up"
+                        style=" font-family: latin; font-size: 40px; color: rgb(255, 255, 255)"><i>Dwi Ajeng Tyas Sari</i></span>
+                    <h4 data-aos="fade-up" style="font-size: 15px; font-family: standart; color:rgb(255, 255, 255) ; ">
+                        Putri Dari Pasangan </h4>
+                    <h4 data-aos="fade-up" style="font-size: 15px; font-family: standart; color:rgb(255, 255, 255)">
+                    Bapak Abdul Hadi
+                            dan Ibu Koyimah</h4>
+                    <div data-aos="fade-up" class="medsos pb-4">
+                        <button type="button" class="btn btn-warning tombol"
+                            style="color: rgb(61, 61, 61); font-size: 15px; padding: 5px;"><a
+                                href="https://instagram.com/jamblemsewu?igshid=MzRlODBiNWFlZA=="
+                                class="bi bi-instagram p-1"
+                                style="text-decoration:none; color: #222; font-size: 15px;">&nbsp; jamblemsewu</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <span data-aos="fade-left"
+                        style="font-family: latin; font-size: 80px; color: rgb(255, 255, 255)">&</span>
+                </div>
+                <div data-aos="zoom-in" class="col-12 pt-4">
+                    <img data-aos="fade-up" src="./image/heru/heru.png" style="width: 300px; height: auto; max-width: 100%;">
+                    <br>
+                    <br>
+                    <span data-aos="fade-up" style=" font-family: latin; font-size: 40px; color: rgb(255, 255, 255)">
+                        <i> Heru Setiawan </i></span>
+                    <h4 data-aos="fade-up" style="font-size: 15px; font-family: standart; color:rgb(255, 255, 255) ; ">
+                        Putra Dari Pasangan </h4>
+                    <h4 data-aos="fade-up" style="font-size: 15px; font-family: standart; color:rgb(255, 255, 255)">
+                        <b>Bapak Saiful Hadi dan Ibu Mufrodah</h4>
+                    <div data-aos="fade-up" class="medsos pb-4">
+                        <button type="button" class="btn btn-warning tombol"
+                            style="color: rgb(61, 61, 61); font-size: 15px; padding: 5px;"><a
+                                href="https://instagram.com/herusetiawa_n?igshid=MzRlODBiNWFlZA=="
+                                class="bi bi-instagram p-1"
+                                style="text-decoration:none; color: #222; font-size: 15px;">&nbsp; herusetiawa_n</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- III -->
+
+    <!-- IV -->
+    <div class="container-fluid cover2">
+        <div class="container text-center " style=" padding-top: 50px; padding-bottom: 50px;">
+            <span data-aos="fade-up" style="font-family: latinjudul; font-size: 35px; color: rgb(255, 255, 255)">Waktu Pernikahan</span>
+            <img src="./image/heru/hr.svg" alt="">
+            <img src="./image/PngItem_120610.png"
+                style="padding-bottom: 10px; margin-left: auto; margin-right: auto; width: 250px; height: auto; display: block;"
+                alt="">
+            <div data-aos="fade-up" class="border border-2 p-3 rounded">
+                <img src="./image/wedding-day.png">
+                <p style="font-family: latin; color: rgb(255, 255, 255); font-size:40px;">Akad Nikah</p>
+                <img data-aos="fade-up" src="./image/hr white.svg"
+                    style="padding-bottom: 10px; margin-left: auto; margin-right: auto; width: 250px; height: auto; display: block;"
+                    alt="">
+                <div class="position-relative"
+                    style="margin-left: 50px; margin-right: 50px; margin-top: 15px; color: white;">
+                    <div class="position-absolute top-0 start-0 translate-middle">
+                        <h2 style="font-family: latin;"><B>25</B></h3>
+                    </div>
+                    <div class="position-absolute top-0 start-50 translate-middle">
+                        <h2 style="font-family: latin;"> <B>Agustus</B></h2>
+                    </div>
+                    <div class="position-absolute top-0 start-100 translate-middle">
+                        <h2 style="font-family: latin;"><B>2023</B></h2>
+                    </div>
+                </div>
+                <p class="text-center"
+                    style="margin-bottom:30px; margin-top: 40px; font-family: latin; color: rgb(255, 255, 255); font-size:15px;">
+                    08:00 -
+                    10:00 <br>
+                    Dsn. Krajan Ds. Tambong Kec. Kabat Kab. Banyuwangi </p>
+                <button type="button" class="btn btn-light"
+                    style="color: rgb(61, 61, 61); font-size: 15px; padding: 5px;"><a href="https://maps.app.goo.gl/ysEyxxuBBNcseNGT8"
+                        class="bi bi-geo-alt-fill p-1"
+                        style="text-decoration:none; color: #222; font-size: 15px;">&nbsp; Cek Lokasi</a> </button>
+            </div>
+            <div data-aos="fade-up" class="border border-2 p-3 rounded" style="margin-top: 30px;">
+                <img src="./image/eat.png">
+                <p style="font-family: latin; color: rgb(255, 255, 255); font-size:40px;">Resepsi Nikah </p>
+                <img src="./image/hr white.svg"
+                    style="padding-bottom: 10px; margin-left: auto; margin-right: auto; width: 250px; height: auto; display: block;"
+                    alt="">
+                    <div class="position-relative"
+                    style="margin-left: 50px; margin-right: 50px; margin-top: 15px; color: white;">
+                    <div class="position-absolute top-0 start-0 translate-middle">
+                        <h2 style="font-family: latin;"><B>25</B></h3>
+                    </div>
+                    <div class="position-absolute top-0 start-50 translate-middle">
+                        <h2 style="font-family: latin;"> <B>Agustus</B></h2>
+                    </div>
+                    <div class="position-absolute top-0 start-100 translate-middle">
+                        <h2 style="font-family: latin;"><B>2023</B></h2>
+                    </div>
+                </div>
+                <p class="text-center"
+                    style="margin-bottom:30px; margin-top: 40px; font-family: latin; color: rgb(255, 255, 255); font-size:15px;">
+                    11:00 -
+                    Selesai <br>
+                    Dsn. Krajan Ds. Tambong Kec. Kabat Kab. Banyuwangi </p>
+                <button type="button" class="btn btn-light"
+                    style="color: rgb(61, 61, 61); font-size: 15px; padding: 5px;"><a href="https://maps.app.goo.gl/ysEyxxuBBNcseNGT8"
+                        class="bi bi-geo-alt-fill p-1"
+                        style="text-decoration:none; color: #222; font-size: 15px;">&nbsp; Cek Lokasi</a> </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- V -->
+    <div class="container-fluid countdown1 text-center text-white"
+        style="padding-top: 50px; padding-bottom: 50px;">
+        <div class="container" data-aos="fade-up">
+            <span style="font-family: latin; color: black; font-size: 35px;">Countdown</span>
+            <h4 style="font-size: 20px; color: black; font-family: standart; ">To Our Happy Day </h4>
+            <img src="./images/hr white.svg"
+                style="padding-bottom: 30px; margin-left: auto; margin-right: auto; width: 250px; height: auto; display: block;"
+                alt="">
+
+            <div id="countdown">
+                <div class="box-container">
+                    <div class="box days">
+                        <div class="time"></div>
+                        <div class="label">Hari</div>
+                    </div>
+                    <div class="box hours">
+                        <div class="time"></div>
+                        <div class="label">Jam</div>
+                    </div>
+                    <div class="box minutes">
+                        <div class="time"></div>
+                        <div class="label">Menit</div>
+                    </div>
+                    <div class="box seconds">
+                        <div class="time"></div>
+                        <div class="label">Detik</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- VII -->
+    <div>
+        <div class="container-fluid galeri">
+            <div class="container">
+                <h2 data-aos="fade-up" style="font-family: latin; font-size: 50px; color:rgb(255, 255, 255) ;"
+                    class="pt-5 text-center">
+                    Galery</h2>
+                <img data-aos="fade-up" src="./image/heru/hr.svg"
+                    style="padding-bottom: 30px; margin-left: auto; margin-right: auto; width: 250px; height: auto; display: block;"
+                    alt="">
+                <div class="grid-gallery">
+                    <div data-aos="zoom-in" class="grid-item">
+                        <a href="./image/heru/44.jpg" data-lightbox="gridImage">
+                            <img src="./image/heru/44.jpg" />
+                        </a>
+                    </div>
+                    <div data-aos="zoom-in" class="grid-item">
+                        <a href="./image/heru/3.jpg" data-lightbox="gridImage">
+                            <img src="./image/heru/3.jpg" />
+                        </a>
+                    </div>
+                    <div data-aos="zoom-in" class="grid-item">
+                        <a href="./image/heru/4.jpg" data-lightbox="gridImage">
+                            <img src="./image/heru/4.jpg" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <img src="./image/or.png" style="margin-left: 110px; height: auto; width: px; max-width: 250px;" alt=""
+                srcset="">
+
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- VIII -->
+    <div class="container-fluid p-5" style="background-color: rgb(100, 100, 100); ">
+        <div data-aos="fade-up" id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container text-center text-white"
+                        style="background-size: 30px; background-color: rgb(100, 100, 100); padding: 40px; margin-left: auto; margin-right: auto; ">
+                        <p style="font-family: latin;">"Pernikahan adalah ibadah, dan setiap ibadah bermuara pada
+                            cinta-Nya sebagai tujuan. Sudah sewajarnya setiap upaya meraih cinta-Nya dilakukan dengan
+                            sukacita." <br> <br>
+                            Heru & Tyas</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container text-center text-white"
+                        style="background-size: 30px; background-color: rgb(100, 100, 100); padding: 40px; margin-left: auto; margin-right: auto;">
+                        <p style="font-family: latin;">"Kita jatuh cinta bukan karena menemukan orang yang sempurna,
+                            melainkan karena melihat kesempurnaan pada orang yang tidak sempurna." <br> <br>
+                            Heru & Tyas</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container text-center text-white"
+                        style="background-size: 30px; background-color: rgb(100, 100, 100); padding: 40px; margin-left: auto; margin-right: auto;">
+                        <p style="font-family: latin;">"Pasanganmu adalah rezekimu, pilihan adalah takdirmu. Maka
+                            janganlah memandang kepada selain milikmu dan janganlah membanding-bandingkan dengan yang
+                            bukan milikmu." <br> <br>
+                            Heru & Tyas</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- IX -->
+    <div id="kado" class="container-fluid kado pb-5 pt-5 text-center">
+        <h1 style="font-family: latin; font-size: 35px; color: rgb(0, 0, 0); " data-aos="fade-up">Share Love</h1>
+        <img src="./images/hr.svg" class="pb-3"
+            style="padding-bottom: 15px; margin-left: auto; margin-right: auto; width: 250px; height: auto; display: block;"
+            alt="">
+        <br>
+        <p style="font-family: latin; font-size: 15px; color: rgb(56, 56, 56);" data-aos="fade-up">"Doa restu Bapak/Ibu
+            sekalian merupakan karunia yang sangat berarti bagi kami. Dan jika memberi merupakan ungkapan tanda kasih,
+            Bapak/Ibu dapat memberi kado secara cashless. Terima kasih "
+        </p>
+        <button data-aos="zoom-in" type="button" class="btn btn-dark" data-bs-toggle="modal"
+            data-bs-target="#modalrek">Nomor
+            Rekening</button>
+
+        <div class="modal fade" id="modalrek" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen-sm-down">
+                <div class="modal-content">
+                    <div class="modal-header bg-light">
+                        <h5 class="modal-title" id="exampleModalLabel">Nomor Rekening</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="container pt-3">
+                        <div class="p-4" data-aos="fade-up">
+                            <img src="image/Bank Mandiri Full Version Logo.png" class="barcode">
+                            <h5 class="display-7 pt-3 text-black">BANK MANDIRI</h5>
+                            <h6 class="display-7 text-black" id="text-to-copy2">1430027251485</h6>
+                            <h5 class="display-7 pt-3 text-black">A.N : Dwi Ajeng Tyas Sari</h5>
+                            <button class="btn btn-dark" id="copy-button2">Copy</button>
+                            <div class="alert alert-success alert-dismissible fade show text-center d-none alertcopy2"
+                                style="margin-top: 30px;" role="alert">
+                                <span style="color: rgb(36, 114, 0);">Nomor Rekening Berhasil Disalin</span>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                    aria-label="Close"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container pt-3">
+                        <div class="p-4" data-aos="fade-up">
+                            <img src="image/Logo-BCA-PNG.png" class="barcode">
+                            <h5 class="display-7 pt-3 text-black">BANK BCA</h5>
+                            <h6 class="display-7 text-black" id="text-to-copy2">2640473137</h6>
+                            <h5 class="display-7 pt-3 text-black">A.N : Heru Setiawan</h5>
+                            <button class="btn btn-dark" id="copy-button2">Copy</button>
+                            <div class="alert alert-success alert-dismissible fade show text-center d-none alertcopy2"
+                                style="margin-top: 30px;" role="alert">
+                                <span style="color: rgb(36, 114, 0);">Nomor Rekening Berhasil Disalin</span>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                    aria-label="Close"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer bg-light">
+                        <button href="#" data-aos="fade-up" class="btn btn-success bi bi-whatsapp">
+                            Konfirmasi Transfer</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- X -->
+    <div class="container-fluid" style="padding-top:50px; padding-bottom: 50px; background-color: rgb(34, 34, 34)">
+        <div class="container text-center">
+            <img data-aos="zoom-in" class="mb-3" src="./image/heru/br.png"
+                style="width: 300px; height: auto; max-width: 100%">
+            <h5 data-aos="zoom-in" class="mb-2 text-white" style="font-family: latin;">Merupakan suatu kehormatan dan
+                kebahagiaan bagi kami apabila,<br> Bapak / Ibu / Saudara / i. berkenan hadir untuk memberikan do'a
+                restunya kami ucapkan terimakasih.</h5>
+        </div>
+    </div>
+
+    <!-- akhir -->
+    <div class="container-fluid hal9" style="padding: 50px; padding-bottom: 20px;">
+        <div data-aos="fade-up">
+            <div class="row">
+                <div class="col-12">
+                    <div class="medsos pb-4 text-center" style="margin: auto;">
+                        <img src="./image/logo hitam.svg"
+                            style="margin: auto; width: 30%; max-width: 100%; height: auto;"> <br>
+                        <a href="wa.me/6281235813176" class="bi bi-whatsapp p-1"
+                            style="color: #222; font-size: 15px;"></a>
+                        <a href="https://www.facebook.com/olan.iqhll?mibextid=ZbWKwL" class="bi bi-facebook p-1"
+                            style="color: #222; font-size: 15px;"></a>
+                        <a href="https://www.instagram.com/invites/contact/?i=1jk1ii6iburix&utm_content=3rw7k4e"
+                            class="bi bi-instagram p-1" style="color: #222; font-size: 15px;"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+<!-- countdown -->
+<script>
+    var countdownElem = document.getElementById('countdown');
+    var countDownTime = new Date('2023-08-25T00:00:00Z').getTime();
+
+    var countdownInterval = setInterval(function () {
+        var now = new Date().getTime();
+        var distance = countDownTime - now;
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Menampilkan waktu mundur dalam kotak-kotak
+        var daysElem = countdownElem.querySelector('.days .time');
+        var hoursElem = countdownElem.querySelector('.hours .time');
+        var minutesElem = countdownElem.querySelector('.minutes .time');
+        var secondsElem = countdownElem.querySelector('.seconds .time');
+
+        daysElem.innerText = days;
+        hoursElem.innerText = hours;
+        minutesElem.innerText = minutes;
+        secondsElem.innerText = seconds;
+
+        // Menghentikan countdown ketika waktu habis
+        if (distance < 0) {
+            clearInterval(countdownInterval);
+            countdownElem.innerHTML = "Waktu habis!";
+        }
+    }, 1000);
+</script>
+<script>
+    var myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {
+        keyboard: false
+    })
+    myModal.show()
+</script>
+<!-- Nama Tamu -->
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const guestName = urlParams.get('name');
+    const greeting = document.getElementById("greeting");
+    greeting.innerHTML = guestName;
+</script>
+<!-- aos -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+<!-- LGHTBOX -->
+<!-- jQuery CDN Link -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<!-- Lightbox JS -->
+<script src="lightbox2/dist/js/lightbox.min.js"></script>
+<!-- Custom js -->
+<script src="js/main.js"></script>
+<script>
+    // copy 1
+    const copyButton = document.querySelector("#copy-button1");
+    const textToCopy = document.querySelector("#text-to-copy1");
+    const alertcopy = document.querySelector('.alertcopy1');
+
+    copyButton.addEventListener("click", function () {
+        navigator.clipboard.writeText(textToCopy.textContent).
+        then(function () {
+            console.log("Teks berhasil disalin ke clipboard");
+            alertcopy.classList.toggle('d-none');
+        }, function (err) {
+            console.error("Gagal menyalin teks: ", err);
+        });
+    });
+</script>
+<script>
+    // copy2
+    const copyButton2 = document.querySelector("#copy-button2");
+    const textToCopy2 = document.querySelector("#text-to-copy2");
+    const alertcopy2 = document.querySelector('.alertcopy2');
+
+    copyButton2.addEventListener("click", function () {
+        navigator.clipboard.writeText(textToCopy2.textContent).
+        then(function () {
+            console.log("Teks berhasil disalin ke clipboard");
+            alertcopy2.classList.toggle('d-none');
+        }, function (err) {
+            console.error("Gagal menyalin teks: ", err);
+        });
+    });
+</script>
+<!-- music -->
+<script>
+    const myAudio = document.getElementById("audio");
+    const btn = document.getElementById("btn-playback");
+    const btnIcon = document.querySelector("#btn-playback > i");
+    const btnText = document.getElementById("btn-text");
+
+    const toggleMusic = () => {
+        const dataPlay = btn.getAttribute('data-play');
+
+        if (dataPlay === 'false') {
+            btn.setAttribute('data-play', 'true');
+            myAudio.play();
+            btnIcon.classList.remove("fa-play");
+            btnIcon.classList.add("fa-pause");
+            btnText.innerText = "PAUSE";
+        } else {
+            btn.setAttribute('data-play', 'false');
+            myAudio.pause();
+            btnIcon.classList.remove("fa-pause");
+            btnIcon.classList.add("fa-play");
+            btnText.innerText = "PLAY";
+        }
+    };
+
+    myAudio.onpause = () => {
+        btn.setAttribute('data-play', 'false');
+        myAudio.pause();
+        btnIcon.classList.remove("fa-pause");
+        btnIcon.classList.add("fa-play");
+        btnText.innerText = "PLAY";
+    };
+</script>
+
+</html>
