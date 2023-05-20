@@ -9,6 +9,11 @@
     color: rgb(104, 35, 35)
 }
 
+@font-face {
+    font-family: 'latin';
+    src: url(./Rosmatika.ttf);
+}
+
 .modalbody {
     background: rgba(0, 0, 0, 0.575) url('./image/heru/bg1.jpg');
     background-position:center;
