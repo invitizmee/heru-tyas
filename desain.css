@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'latinjudul';
-    src: url(simplethread.otf);
+    src: url(./simplethread.otf);
 }
 
 @font-face {
     font-family: 'standart';
-    src: url(AvenirLTProBook.otf);
+    src: url(./AvenirLTProBook.otf);
     color: rgb(104, 35, 35)
 }
 
